@@ -1,0 +1,32 @@
+﻿@model List<Eryaz.Proje.Models.kullanici>
+@{
+    ViewBag.Title = "kullanici";
+}
+
+
+
+@foreach(var bilgi in Model)
+            {
+<table>
+    <tr>
+        <td>
+            @bilgi.ID
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @bilgi.isim
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @bilgi.parol
+        </td>
+    </tr>
+</table>
+
+
+
+
+
+            }
